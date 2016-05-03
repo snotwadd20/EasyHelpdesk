@@ -103,7 +103,8 @@ public class EasyHelpdesk : MonoBehaviour
             helpMessage.horizontalOverflow = HorizontalWrapMode.Wrap;
             helpMessage.verticalOverflow = VerticalWrapMode.Overflow;
             
-            
+			helpMessage.supportRichText = true;
+
             Shadow textShadow = helpMessage.gameObject.AddComponent<Shadow>();
             textShadow.effectColor = Color.black;
 
